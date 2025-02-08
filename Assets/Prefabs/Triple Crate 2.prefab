@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 394307326234681619}
   - component: {fileID: 5012660412987534895}
-  - component: {fileID: 2058358362477604222}
   - component: {fileID: 8458522250246058621}
+  - component: {fileID: 3973813488034606893}
   m_Layer: 0
-  m_Name: Bush
+  m_Name: Triple Crate 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c974af69f32be194b8f17edbf754f853, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8edb8a9e5dc02a343a8f1bf0cca67cc6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,8 +86,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!70 &2058358362477604222
-CapsuleCollider2D:
+--- !u!114 &8458522250246058621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679171550337773731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2bd3d4e70cb4a489801cb3d842c3b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyVFX: {fileID: 7172974430547040739, guid: 624c0e61d992cad409fc5a9d7237d6c4, type: 3}
+--- !u!68 &3973813488034606893
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -119,18 +132,21 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 1}
-  m_Direction: 0
---- !u!114 &8458522250246058621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6679171550337773731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e2bd3d4e70cb4a489801cb3d842c3b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyVFX: {fileID: 7172974430547040739, guid: b6a9d64ca25e37f4e8608d60bdba1fd8, type: 3}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.6405921, y: 1.0447906}
+  - {x: 0.092464805, y: 1.021735}
+  - {x: 0.1793611, y: 0.9207013}
+  - {x: 0.6011356, y: 0.88306946}
+  - {x: 0.543728, y: 0.008798838}
+  - {x: 0.44544023, y: -0.0031616688}
+  - {x: 0.44304729, y: -0.8799857}
+  - {x: 0.3035766, y: -0.8603853}
+  - {x: -0.32713652, y: -0.8240459}
+  - {x: -0.33926344, y: -0.07755852}
+  - {x: -0.6611092, y: -0.07481253}
+  - {x: -0.68002284, y: 1.0447915}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
